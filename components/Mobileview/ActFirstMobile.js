@@ -65,7 +65,7 @@ export const ActFirstMobile = () => {
                         <img src={'/MobileImages/cs02_mobile.png'} alt="" className='w-full h-[267px] ' />
                         <div className='grid grid-cols-1 '>
                             <div className='absolute top-[-20px] left-[25px] px-2 py-2 z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1 w-[60%] h-[42px] flex  flex-nowrap '>
-                                <span className=' text-[11px] font-normal uppercase font-bold '>YOU KNOW why he’s like this?</span>
+                                <span className=' text-[11px]  uppercase font-bold '>YOU KNOW why he’s like this?</span>
                             </div>
                         </div>
 
