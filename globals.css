@@ -1,12 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://p.typekit.net/p.css?s=1&k=fab6ygu&ht=tk&f=24339&a=7394438&app=typekit&e=css");
+
+
+/* @font-face {
+ 
+  font-family: "Classic";
+  src: url("./public/fonts/ClassicComic-Bold.ttf");
+  font-style: normal;
+} */
 
 
 @font-face {
-  font-family: "Classic";
-  src: url("./public/fonts/ClassicComic-Bold.ttf");
+font-family:"Classic";
+src:url("https://use.typekit.net/af/2cb012/00000000000000007735a52d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/2cb012/00000000000000007735a52d/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/2cb012/00000000000000007735a52d/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
+
+/* .font-classic { font-family: "classic-comic",sans-serif; } */
+
+.textEnter-transition{
+  transition: all 2s ease-in-out;
+  transform: translate(0%);
+}
+.textOut-transition{
+  transition: all 2s ease-in-out;
+  transform: translate(-100%);
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -30,3 +52,5 @@
       display: none !important;
     }
   }
+
+  

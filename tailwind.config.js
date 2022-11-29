@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        classic: ["Classic", "cursive"],
+        classic: ["Classic", "sans-serif"],
       },
     },
     container: {

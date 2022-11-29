@@ -8,12 +8,15 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 import { ActFirstDesktop } from '../components/Desktopview/ActFirstDesktop';
 
 export default function Home() {
-
+  
+   
+  
+ 
 
 
   return (
     <>
-    <div className='hidden-mobile'>
+    <div className='hidden-mobile' >
     <ActFirstDesktop  />
     </div>
      <div className='visible-mobile'>

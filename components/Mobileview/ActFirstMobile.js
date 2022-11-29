@@ -31,54 +31,43 @@ export const ActFirstMobile = () => {
                 <div className='flex  justify-center '>
                     <div className=' w-[90%] ' >
 
-                        <div className=' relative flex  grid grid-cols-1 mt-20'>
-                            <img src={'/MobileImages/cs01_mobile.png'} alt="" className='w-full h-[267px] ' />
-                            <div className='grid grid-cols-1 '>
-                                <div className='absolute top-[-20px] left-[25px] px-2 py-2 z-50 border-[#070707] right-0 text-center items-center bg-[#FFE5A3] border-2 opacity-1 w-[60%] h-[42px] flex  flex-nowrap '>
-                                    <span className=' text-[11px] uppercase font-bold '>He’s not going to make it…</span>
+                        <div className=' relative flex  grid grid-cols-1 mt-20 '>
+                            <img src={'/MobileImages/cs01_mobile.png'} alt="" className='w-full h-[267px]' />
+                            <div className='grid grid-cols-1 w-[100%] gap-1 absolute top-[-8px] left-[25px]  overflow-hidden '>
+                                <div className='px-[0.6rem] py-[0.15rem] z-50 border-[#070707]  text-center items-center bg-[#FFE5A3] border-2 opacity-1 w-[60%] object-contain flex  flex-nowrap '>
+                                    <span className=' text-[10px] uppercase font-normal '>He’s not going to make it…</span>
+                                </div>
+                                <div className='  px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707]  items-center bg-[#FFE5A3] border-2 opacity-1 w-[80%]  flex  flex-nowrap '>
+                                    <span className='text-[10px] uppercase font-normal '>You know that is not for you to decide… that is up to him.</span>
+                                </div>
+                                <div className=' px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707]   items-center bg-[#FFE5A3] border-2 opacity-1 w-[35%]  flex  flex-nowrap'>
+                                    <span className='text-[10px] uppercase font-normal '>There is hope…</span>
                                 </div>
                             </div>
 
-                            <div className='grid grid-cols-1'>
-                                <div className=' absolute top-[30px] left-[25px] px-2 py-2 z-50 border-[#070707] right-0 items-center bg-[#FFE5A3] border-2 opacity-1 w-[80%] h-[42px] flex  flex-nowrap '>
-                                    <span className='text-[11px] uppercase font-bold '>You know that is not for you to decide… that is up to him.</span>
-                                </div>
-                            </div>
-
-                            <div className='grid grid-cols-1'>
-                                <div className=' absolute top-[80px] left-[25px] px-2 py-2 z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1 w-[35%] h-[42px] flex  flex-nowrap'>
-                                    <span className='text-[11px] uppercase font-bold '>There is hope…</span>
-                                </div>
-                            </div>
                         </div>
 
 
                         <div className='my-2  flex justify-center '>
                             <div className='w-[90%] grid  grid-cols-1'>
-                                <div className='px-2 py-2 z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
-                                    <span className='text-[11px] uppercase font-bold '>He’s fat and soft. a trigger happy child is what he is. he’s not worked a day in his life. how do you suppose he’s to survive this game we’re set for him…..</span>
+                                <div className='px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
+                                    <span className='text-[10px] uppercase font-normal '>He’s fat and soft. a trigger happy child is what he is. he’s not worked a day in his life. how do you suppose he’s to survive this game we’re set for him…..</span>
                                 </div>
                             </div>
 
                         </div >
 
-                        <div className=' relative flex  grid grid-cols-1 mt-6'>
+                        <div className=' relative flex  grid grid-cols-1 mt-3'>
                             <img src={'/MobileImages/cs02_mobile.png'} alt="" className='w-full h-[267px] ' />
-                            <div className='grid grid-cols-1 '>
-                                <div className='absolute top-[-20px] left-[25px] px-2 py-2 z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1 w-[60%] h-[42px] flex  flex-nowrap '>
-                                    <span className=' text-[11px]  uppercase font-bold '>YOU KNOW why he’s like this?</span>
+                            <div className='grid grid-cols-1 w-[100%] gap-1 col absolute right-0 left-[25px] top-[-8px] overflow-hidden'>
+                                <div className=' px-[0.6rem] py-[0.15rem] object-contain  z-50 border-[#070707]   items-center bg-[#FFE5A3] border-2 opacity-1 w-[60%]  flex  flex-nowrap '>
+                                    <span className=' text-[10px]  uppercase font-normal '>YOU KNOW why he’s like this?</span>
                                 </div>
-                            </div>
-
-                            <div className='grid grid-cols-1'>
-                                <div className=' absolute top-[30px] left-[25px] px-2 py-2 z-50 border-[#070707] right-0 items-center bg-[#FFE5A3] border-2 opacity-1 w-[45%] h-[42px] flex  flex-nowrap '>
-                                    <span className='text-[11px] uppercase font-bold '>Of Course i know why….</span>
+                                <div className='  px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707]  items-center bg-[#FFE5A3] border-2 opacity-1 w-[50%]  flex  flex-nowrap '>
+                                    <span className='text-[10px] uppercase font-normal '>Of Course i know why….</span>
                                 </div>
-                            </div>
-
-                            <div className='grid grid-cols-1'>
-                                <div className=' absolute top-[80px] left-[25px] px-2 py-2 z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1 w-[35%] h-[42px] flex  flex-nowrap'>
-                                    <span className='text-[11px] uppercase font-bold '>He Won’t remember….</span>
+                                <div className='  px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707]   items-center bg-[#FFE5A3] border-2 opacity-1 w-[40%]  flex  flex-nowrap'>
+                                    <span className='text-[10px] uppercase font-normal '>He Won’t remember….</span>
                                 </div>
                             </div>
                         </div>
@@ -86,44 +75,44 @@ export const ActFirstMobile = () => {
 
                         <div className='my-2  flex justify-center'>
                             <div className='w-[90%] grid  grid-cols-1'>
-                                <div className='px-2 py-2 justify-end z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
-                                    <span className='text-[11px] text-right uppercase font-bold '>That’s enough from you two. he has help. he won’t survive without it. none of us would. all seven of our destinies are linked…</span>
+                                <div className='px-[0.6rem] py-[0.15rem] object-contain justify-end z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
+                                    <span className='text-[10px] text-right uppercase font-normal '>That’s enough from you two. he has help. he won’t survive without it. none of us would. all seven of our destinies are linked…</span>
                                 </div>
                             </div>
 
                         </div >
                         <div className='my-2  flex justify-center'>
                             <div className='w-[90%] grid  grid-cols-6'>
-                                <div className='col-start-2 justify-end col-span-6 px-2 py-2 z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
-                                    <span className='text-[11px] text-right uppercase font-bold '>You don’t have to remind us, we all know the consequences if he fails…</span>
+                                <div className='col-start-2 justify-end col-span-6 px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
+                                    <span className='text-[10px] text-right uppercase font-normal '>You don’t have to remind us, we all know the consequences if he fails…</span>
                                 </div>
                             </div>
 
                         </div >
                         <div className='my-2  flex justify-center'>
                             <div className='w-[90%] grid  grid-cols-2'>
-                                <div className=' col-start-2 justify-end px-2 py-2 z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
-                                    <span className='text-[11px] text-right uppercase font-bold '>… and there’s eights of us</span>
+                                <div className=' col-start-2 justify-end px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
+                                    <span className='text-[10px] text-right uppercase font-normal '>… and there’s eights of us</span>
                                 </div>
                             </div>
                         </div >
 
 
 
-                        <div className=' relative flex  grid grid-cols-1 mt-[70px] '>
+                        <div className=' relative flex  grid grid-cols-1 mt-[45px] '>
                             <img src={'/MobileImages/cs03_mobile.png'} alt="" className='w-full h-[267px]' />
 
                             <div className='my-2 flex justify-center'>
-                                <div className='w-[90%] grid  grid-cols-3 absolute  top-[-62px]'>
-                                    <div className='col-span-2 px-2 py-2 z-50 border-[#070707]  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
-                                        <span className='text-[11px] uppercase font-normal '>fuck him. he’s a parasite. he’s not playing for his evolution… he plays for his destruction. <br /><br /> chaos is all he knows.</span>
+                                <div className='w-[90%] grid  grid-cols-3 absolute  top-[-40px]'>
+                                    <div className='col-span-2  px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707]  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
+                                        <span className='text-[10px] uppercase font-normal '>fuck him. he’s a parasite. he’s not playing for his evolution… he plays for his destruction. <br /><br /> chaos is all he knows.</span>
                                     </div>
                                 </div>
                             </div>
                             <div className='my-2  flex justify-center '>
-                                <div className='w-[90%] grid  grid-cols-1 absolute top-[230px]'>
-                                    <div className=' px-2 py-2 justify-center z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
-                                        <span className='text-[11px] text-left uppercase  font-normal'>yes, he’s an asshole, but this is how its always been… sometimes we need asshole to teach us. <br /><br /> without shadow, light has nothing to reflect from. without shadow, none of us remember why we’re here. <br /><br /> This life is about a game… but only a few of us know how to unlock the cheat codes. <br /><br /> AND MAYBE HE WILL TOO…</span>
+                                <div className='w-[90%] grid  grid-cols-1 absolute top-[235px]'>
+                                    <div className=' px-[0.6rem] py-[0.15rem] object-contain justify-center z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
+                                        <span className='text-[10px] text-left uppercase  font-normal'>yes, he’s an asshole, but this is how its always been… sometimes we need asshole to teach us. <br /><br /> without shadow, light has nothing to reflect from. without shadow, none of us remember why we’re here. <br /><br /> This life is about a game… but only a few of us know how to unlock the cheat codes. <br /><br /> AND MAYBE HE WILL TOO…</span>
                                     </div>
                                 </div>
 
@@ -134,9 +123,9 @@ export const ActFirstMobile = () => {
                 </div>
 
                 <div className=''>
-                    <div className='w-full  justify-center flex mt-[12rem] mb-4'>
-                        <div className='justify-center px-2 py-2 z-50 border-[#070707] h-[23px]  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
-                            <span className='text-[11px]  text-center uppercase font-bold '>well, that is pricey why we built….</span>
+                    <div className='w-full  justify-center flex mt-[10rem] mb-4'>
+                        <div className='justify-center px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707] h-[23px]  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
+                            <span className='text-[10px]  text-center uppercase font-normal '>well, that is pricey why we built….</span>
                         </div>
                     </div>
                 </div >
@@ -153,12 +142,16 @@ export const ActFirstMobile = () => {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-1 relative flex justify-center' >
-                    <img src={'/MobileImages/the-star.png'} alt="" className='w-full h-[602px] bg-transparent z-50 opacity-1 ' />
-                    <div className='absolute top-[350px] left-0 right-0  flex justify-center items-center w-[100%]' >
-                        <img src={'/MobileImages/Wormhole_03.png'} alt="" className='w-full h-[405px] opacity-1 bg-transparent ' />
-                    </div>
-
+                <div className=' relative grid grid-cols-1' >
+                    <img src={'/MobileImages/the-star02.png'} alt="" className='w-full  h-auto object-contain  bg-transparent z-50 opacity-1 ' />
+                    {/* <img src={'/MobileImages/Wormhole_03.png'} alt="" className='w-full h-[25.3125rem] opacity-1 bg-transparent ' /> */}
+                    <div className='absolute bottom-[5px] grid w-[90%] grid-cols-2'>
+                        <div className='col-start-2  flex justify-end'>
+                            <div className='   px-[0.6rem] py-[0.15rem] object-contain z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
+                                <span className='text-[10px] text-center uppercase font-normal '>TO be continued….</span>
+                            </div>
+                        </div>
+                    </div >
                 </div>
 
 
