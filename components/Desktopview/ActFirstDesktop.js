@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { Parallax, useParallax } from 'react-scroll-parallax';
+import 'atropos/css'
+import Atropos from 'atropos/react';
+
 
 export const ActFirstDesktop = () => {
   const [enter ,setEntered]  = useState(false)
@@ -67,10 +70,9 @@ export const ActFirstDesktop = () => {
   const text11 = useParallax({
     translateX: [25, 0, 'easeOutExpo'],
   });
-  const cloud = useParallax({
-    // scaleX: [1, 1.2],
-    // easing: 
-  });
+  // const cloud = useParallax({
+  //   scaleY: [1.5, 0],
+  // });
   return (
 
     <div className='font-classic overflow-hidden' >
@@ -95,7 +97,13 @@ export const ActFirstDesktop = () => {
           <img src={'/DesktopImages/Billboard_fullSize.png'} alt="" className='' />
         </div>
 
-        <div className=' relative flex  justify-between w-[100%] gap-1' ref={cloud.ref}  >
+        <Atropos
+        // onEnter={() => console.log('Enter')}
+        // onLeave={() => console.log('Leave')}
+        // onRotate={(x, y) => console.log('Rotate', x, y)}
+        // stretchY={0}
+      >
+        <div className=' relative flex  justify-between w-[100%] gap-1'  >
           <div className='grid grid-cols-2 w-[100%]'>
             <img src={'/DesktopImages/Cloud01.png'} alt="" className='' />
             <div className='flex justify-start items-center '>
@@ -104,12 +112,12 @@ export const ActFirstDesktop = () => {
           </div>
           <div className='absolute top-[-200px] grid grid-cols-2 flex justify-end' >
             <div className='col-start-2'>
-              <img src={'/DesktopImages/Cloud02.png'} alt="" className=' ' />
+              <img src={'/DesktopImages/Cloud02.png'} alt="" className=' '  />
             </div>
           </div>
 
         </div>
-
+        </Atropos>
         <div className='flex  justify-center '>
           <div className=' w-[80%] ' >
             <div ref={parallax0.ref} className='duration-300'>
