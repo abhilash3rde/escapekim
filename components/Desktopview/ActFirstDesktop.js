@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Parallax, useParallax } from 'react-scroll-parallax';
 // import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 
 
 export const ActFirstDesktop = () => {
-  const [enter ,setEntered]  = useState(false)
-  const [progress ,setProgress] = useState(null)
-  console.log(enter ,'enter')
+  const [enter, setEntered] = useState(false)
+  const [progress, setProgress] = useState(null)
+  console.log(enter, 'enter')
   const parallax = useParallax({
     // easing: 'easeOutQuad',
     // scale:[2, 1],
@@ -49,7 +49,7 @@ export const ActFirstDesktop = () => {
 
   const text5 = useParallax({
     translateX: [-75, 0, 'easeOutExpo']
-    
+
   })
 
   const text6 = useParallax({
@@ -81,17 +81,22 @@ export const ActFirstDesktop = () => {
   });
 
   const cloud = useParallax({
-    // scaleX: [1.5, 0],
+    scale: [1.5, 1],
+    easing: "easeInQuad"
 
+  });
+
+  const warmHoleimg = useParallax({
+    translateY: [75, 0, 'easeOutExpo'],
   });
   return (
 
-    <div className='font-classic overflow-hidden  scroll-smooth' >
-      <div className="bg-[url('/DesktopImages/background_02.jpg')] h-[100%] bg-cover bg-no-repeat bg-fixed  " >
+    <div className='font-classic overflow-hidden  scroll-smooth ' >
+      <div className="bg-[url('/DesktopImages/background_02.jpg')] h-[100%] bg-cover  pb-[200px] bg-no-repeat bg-fixed  " >
 
         <div className='grid grid-cols-2 gap-10 w-[100%] container mx-auto  '>
           <div className=' flex text-center items-center mt-4' data-aos="fade-up">
-            <img src={'/DesktopImages/Act01.png'} alt=""  className=' bg-top  to-transparent w-[84px] h-[38px]' />
+            <img src={'/DesktopImages/Act01.png'} alt="" className=' bg-top  to-transparent w-[84px] h-[38px]' />
           </div>
           <div className='flex justify-end text-center items-center mt-4 gap-2'>
             <span>
@@ -108,24 +113,36 @@ export const ActFirstDesktop = () => {
           <img src={'/DesktopImages/Billboard_fullSize.png'} alt="" className='' />
         </div>
 
-      
         <div className=' relative flex  justify-between w-[100%] gap-1'  >
           <div className='grid grid-cols-2 w-[100%]'>
-            <img src={'/DesktopImages/Cloud01.png'} alt="" className=' object-contain' />
+            <Parallax
+              scale={[1.5, 1]}
+              easing="easeInQuad"
+            >
+              <img src={'/DesktopImages/Cloud01.png'} alt="" className=' object-contain  duration-[2000ms]' />
+            </Parallax>
             <div className='flex justify-start items-center '>
-              <img src={'DesktopImages/silhouette-dude@2x.png'} alt="" className='h-[62px] w-[66px] z-50 absolute left-[47%]  object-contain' />
+              <img src={'DesktopImages/silhouette-dude@2x.png'} alt="" className='h-[62px] w-[66px] z-50 absolute left-[47%]  object-contain duration-100' ref={cloud.ref} />
             </div>
           </div>
-          <div className='absolute top-[-200px] grid grid-cols-2 flex justify-end' >
+          <div className='absolute top-[-260px] grid grid-cols-2 flex justify-end' >
+
             <div className='col-start-2 flex justify-end'>
-              <img src={'/DesktopImages/Cloud02.png'} alt="" className=' object-contain'  ref={cloud.ref}/>
+              <Parallax
+                scale={[1.5, 1]}
+                easing="easeInQuad"
+              >
+                <img src={'/DesktopImages/Cloud02.png'} alt="" className=' object-contain duration-[2000ms]' />
+              </Parallax>
             </div>
           </div>
 
         </div>
+
+
         <div className='flex  justify-center '>
           <div className=' w-[80%] ' >
-            <div ref={parallax0.ref} className='duration-300'>
+            <div  className='duration-300' ref={parallax0.ref}>
               <div className=' relative flex  grid grid-cols-1 ' >
                 <img src={'/DesktopImages/cs01.png'} alt="" className='w-full h-[362px] z-50   duration-200 ' ref={parallax.ref} />
 
@@ -158,7 +175,7 @@ export const ActFirstDesktop = () => {
                 </div>
               </div>
 
-              <Parallax 
+              <Parallax
                 className={enter ? 'textEnter-transition' : 'textOut-transition'}
                 onEnter={() => setEntered(true)}
                 onExit={() => setEntered(false)}
@@ -227,7 +244,7 @@ export const ActFirstDesktop = () => {
 
             <div className='mb-2  ' >
               <div className='w-[100%] grid   grid-cols-4 mt-4  duration-[2000ms] z-50 ' ref={text10.ref}>
-                <div  className=' col-start-6 px-2 py-2 h-[2.625rem]  w-[17.3125rem]  justify-end z-50 border-[#070707]  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
+                <div className=' col-start-6 px-2 py-2 h-[2.625rem]  w-[17.3125rem]  justify-end z-50 border-[#070707]  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
                   <span className='text-[14px] text-right uppercase font-normal '>… and there’s eights of us</span>
                 </div>
               </div>
@@ -236,9 +253,9 @@ export const ActFirstDesktop = () => {
 
             <div className=' relative flex  grid grid-cols-1 duration-200 ' ref={parallax3.ref}>
               <img src={'/DesktopImages/cs03last.png'} alt="" className='w-full h-[23.375rem] z-50' />
-            
-             
-            
+
+
+
               <div className='my-2 flex justify-center'>
                 <div className='w-[80%] grid  grid-cols-3 absolute  top-[0px] z-50 duration-[2000ms]' ref={text11.ref}>
                   <div className='col-span-2 px-2 py-2 z-50 border-[#070707]  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
@@ -246,7 +263,7 @@ export const ActFirstDesktop = () => {
                   </div>
                 </div>
               </div>
-          
+
               <div className='my-2  flex justify-center '>
                 <div className='w-[95%] grid  grid-cols-2 absolute  bottom-[-15px] z-50 duration-[2000ms]' ref={text12.ref}>
                   <div className=' px-2 py-2 z-50 border-[#070707] w-[34.625rem]  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
@@ -270,24 +287,55 @@ export const ActFirstDesktop = () => {
 
         <div className=' relative flex w-full '>
           <div className='w-[40%]' >
-            <img src={'/DesktopImages/Cloud03.png'} alt="" className='h-[37.5rem] w-[43.25rem] bg-transparent  object-contain' />
+            <Parallax
+              scale={[1.3, 1]}
+              easing="easeInQuad"
+            >
+              <img src={'/DesktopImages/Cloud03.png'} alt="" className='h-[37.5rem] w-[43.25rem] bg-transparent  object-contain duration-[2000ms]' />
+            </Parallax>
           </div>
+
           <div className='w-[20%] flex-col  flex justify-center items-center  mt-[10.937rem]'>
-            <img src={'/DesktopImages/the_tesseract.png'} alt="" className=' h-[4.25rem] w-[15.375rem] bg-transparent col-start-2 object-contain' />
-            <img src={'/DesktopImages/silhouette-dude01.png'} alt="" className=' h-[1.375rem] z-10 w-[1.5rem] bg-transparent object-contain' />
-
+            <Parallax
+              scaleX={[1.2, 1]}
+              easing="easeInQuad"
+            >
+              <img src={'/DesktopImages/the_tesseract.png'} alt="" className=' h-[4.25rem] w-[15.375rem] bg-transparent col-start-2 object-contain duration-[2000ms]' />
+            </Parallax>
+            <Parallax
+              scaleX={[1.2, 1]}
+              easing="easeInQuad"
+            >
+              <img src={'/DesktopImages/silhouette-dude01.png'} alt="" className=' h-[1.375rem] z-10 w-[1.5rem] bg-transparent object-contain duration-[2000ms]' />
+            </Parallax>
             <div className=' absolute top-[385px] grid grid-cols-1  flex justify-center ' >
-              <img src={'/DesktopImages/the-star.png'} alt="" className='w-[44.812rem] h-[58.375rem] bg-transparent z-50 opacity-1 object-contain' />
-
+              <Parallax
+                scale={[1, 0]}
+                easing='easeInQuad'
+              // translateY={[20 , 0 , 'easeInExpo']}
+              >
+                <img src={'/DesktopImages/the-star.png'} alt="" className='w-[44.812rem] h-[58.375rem] bg-transparent z-50 opacity-1 object-contain duration-[2000ms]' />
+              </Parallax>
             </div>
           </div>
+
           <div className='flex justify-end w-[40%]' >
-            <img src={'/DesktopImages/Cloud04.png'} alt="" className='h-[34.625rem] w-[39.875rem] bg-transparent col-start-2  object-contain' />
+            <Parallax
+              scale={[1.3, 1]}
+              easing="easeInQuad"
+            >
+              <img src={'/DesktopImages/Cloud04.png'} alt="" className='h-[34.625rem] w-[39.875rem] bg-transparent col-start-2  object-contain duration-[2000ms]' />
+            </Parallax>
           </div>
         </div>
 
-        <div className='relative flex justify-center items-center w-[100%]' >
-          <img src={'/DesktopImages/Wormhole_03.png'} alt="" className='w-full h-[1080px] opacity-1 bg-transparent ' />
+        <div className='relative flex justify-center items-center w-[100%]  duration-700' ref={warmHoleimg.ref}>
+          {/* <Parallax
+            translateY={[100, 0, 'easeOutExpo']}
+            easing="easeInQuad"
+          > */}
+            <img src={'/DesktopImages/Wormhole_03.png'} alt="" className='w-full h-[1080px] opacity-1 bg-transparent duration-[2000ms] ' />
+          {/* </Parallax> */}
           <div className='absolute bottom-[105px] grid w-[80%] grid-cols-3 duration-[2000ms] z-50' ref={textEnd.ref}>
             <div className='col-start-3   flex justify-start'>
               <div className='   px-2 h-[42px] w-[12rem] py-2 z-50 border-[#070707] right-0  items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>

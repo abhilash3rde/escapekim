@@ -29,6 +29,12 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
   transform: translate(-100%);
 }
 
+/* .zoom:hover {
+  transform: scale(2);
+ transform: translate(50px);
+ transition: all 3s;
+} */
+
 
 @media screen and (max-width: 768px) {
 
