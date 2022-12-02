@@ -6,24 +6,26 @@ import { useState } from 'react';
 import { ActFirstMobile } from '../components/Mobileview/ActFirstMobile';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import { ActFirstDesktop } from '../components/Desktopview/ActFirstDesktop';
+import { ActFirstDesktop02 } from '../components/Desktopview/ActFirstDesktop_2';
 
 export default function Home() {
-  
-   
-  
- 
+
+
+
+
 
 
   return (
     <>
-    <div className='hidden-mobile' >
-    <ActFirstDesktop  />
-    </div>
-     <div className='visible-mobile'>
-     <ActFirstMobile />
-     </div>
+      <div className='hidden-mobile' >
+        {/* <ActFirstDesktop /> */}
+        <ActFirstDesktop02 />
+      </div>
+      <div className='visible-mobile'>
+        <ActFirstMobile />
+      </div>
 
-   
+
 
     </>
   )

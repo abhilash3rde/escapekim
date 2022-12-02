@@ -32,19 +32,15 @@ export const ActFirstDesktop = () => {
     translateY: [0, -50, 'easeInExpo'],
   });
 
-  const text1 = useParallax({
-    translateX: [-100, 0, 'easeOutExpo'],
-  });
-  const text2 = useParallax({
-    translateX: [-100, 0, 'easeOutExpo'],
-  });
+  // const text1 = useParallax({
+  //   translateX: [-100, 0, 'easeOutExpo'],
+  // });
+  // const text2 = useParallax({
+  //   translateX: [-100, 0, 'easeOutExpo'],
+  // });
 
-  const text3 = useParallax({
-    translateX: [-100, 0, 'easeOutExpo'],
-  });
-
-  // const text4 = useParallax({
-  //   translateX: [-100, 0 , 'easeOutExpo'],
+  // const text3 = useParallax({
+  //   translateX: [-100, 0, 'easeOutExpo'],
   // });
 
   const text5 = useParallax({
@@ -125,7 +121,7 @@ export const ActFirstDesktop = () => {
               <img src={'DesktopImages/silhouette-dude@2x.png'} alt="" className='h-[62px] w-[66px] z-50 absolute left-[47%]  object-contain duration-100' ref={cloud.ref} />
             </div>
           </div>
-          <div className='absolute top-[-260px] grid grid-cols-2 flex justify-end' >
+          <div className='absolute top-[-260px] grid grid-cols-2 justify-end' >
 
             <div className='col-start-2 flex justify-end'>
               <Parallax
@@ -142,12 +138,18 @@ export const ActFirstDesktop = () => {
 
         <div className='flex  justify-center '>
           <div className=' w-[80%] ' >
-            <div  className='duration-300' ref={parallax0.ref}>
+            <div className='duration-300'
+              ref={parallax0.ref}
+            >
               <div className=' relative flex  grid grid-cols-1 ' >
                 <img src={'/DesktopImages/cs01.png'} alt="" className='w-full h-[362px] z-50   duration-200 ' ref={parallax.ref} />
 
                 <div className=' flex justify-center ' >
-                  <div className='w-[80%] grid  grid-cols-2 absolute  top-[-20px] z-50 duration-[2000ms]' ref={text1.ref} >
+                  <div className='w-[80%] grid  grid-cols-2 absolute  top-[-20px] z-50 duration-[2000ms]'
+
+                  //ref={text1.ref}
+
+                  >
                     <div className=' px-2 py-2 z-50 border-[#070707] w-[275px] h-[42px] items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
                       <span className='text-[14px] uppercase font-normal '>He’s not going to make it…</span>
                     </div>
@@ -156,7 +158,9 @@ export const ActFirstDesktop = () => {
                 </div >
 
                 <div className=' flex justify-center '>
-                  <div className='w-[95%] grid  grid-cols-2 absolute  top-[28px] duration-[2000ms] z-50' ref={text2.ref} >
+                  <div className='w-[95%] grid  grid-cols-2 absolute  top-[28px] duration-[2000ms] z-50'
+                  //ref={text2.ref} 
+                  >
                     <div className=' px-2 py-2 z-50 border-[#070707] w-[34.562rem]  h-[42px] items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
                       <span className='text-[14px] uppercase font-normal '>
                         You know that is not for you to decide… that is up to him.
@@ -165,7 +169,9 @@ export const ActFirstDesktop = () => {
                   </div>
                 </div>
                 <div className=' flex justify-center '>
-                  <div className='w-[95%] grid  grid-cols-2 absolute  top-[76px] z-50 duration-[2000ms]' ref={text3.ref}>
+                  <div className='w-[95%] grid  grid-cols-2 absolute  top-[76px] z-50 duration-[2000ms]'
+                  // ref={text3.ref}
+                  >
                     <div className=' px-2 py-2 z-50 border-[#070707] w-[10.688rem]  h-[42px] items-center bg-[#FFE5A3] border-2 opacity-1  flex  flex-nowrap '>
                       <span className='text-[14px] uppercase font-normal '>
                         There is hope…
@@ -334,7 +340,7 @@ export const ActFirstDesktop = () => {
             translateY={[100, 0, 'easeOutExpo']}
             easing="easeInQuad"
           > */}
-            <img src={'/DesktopImages/Wormhole_03.png'} alt="" className='w-full h-[1080px] opacity-1 bg-transparent duration-[2000ms] ' />
+          <img src={'/DesktopImages/Wormhole_03.png'} alt="" className='w-full h-[1080px] opacity-1 bg-transparent duration-[2000ms] ' />
           {/* </Parallax> */}
           <div className='absolute bottom-[105px] grid w-[80%] grid-cols-3 duration-[2000ms] z-50' ref={textEnd.ref}>
             <div className='col-start-3   flex justify-start'>
