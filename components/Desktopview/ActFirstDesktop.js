@@ -87,7 +87,7 @@ export const ActFirstDesktop = () => {
   });
   return (
 
-    <div className='font-classic overflow-hidden  scroll-smooth ' >
+    <div className='font- classNameic overflow-hidden  scroll-smooth ' >
       <div className="bg-[url('/DesktopImages/background_02.jpg')] h-[100%] bg-cover  pb-[200px] bg-no-repeat bg-fixed  " >
 
         <div className='grid grid-cols-2 gap-10 w-[100%] container mx-auto  '>
@@ -141,7 +141,7 @@ export const ActFirstDesktop = () => {
             <div className='duration-300'
               ref={parallax0.ref}
             >
-              <div className=' relative flex  grid grid-cols-1 ' >
+              <div className=' relative  grid grid-cols-1 ' >
                 <img src={'/DesktopImages/cs01.png'} alt="" className='w-full h-[362px] z-50   duration-200 ' ref={parallax.ref} />
 
                 <div className=' flex justify-center ' >
