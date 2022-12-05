@@ -290,7 +290,7 @@ export const ActFirstDesktop = () => {
             </div>
           </div>
         </div >
-
+ 
         <div className=' relative flex w-full '>
           <div className='w-[40%]' >
             <Parallax
@@ -314,13 +314,13 @@ export const ActFirstDesktop = () => {
             >
               <img src={'/DesktopImages/silhouette-dude01.png'} alt="" className=' h-[1.375rem] z-10 w-[1.5rem] bg-transparent object-contain duration-[2000ms]' />
             </Parallax>
-            <div className=' absolute top-[385px] grid grid-cols-1  flex justify-center ' >
+            <div className=' absolute top-[350px] grid grid-cols-1  flex justify-center ' >
               <Parallax
                 scale={[1, 0]}
                 easing='easeInQuad'
               // translateY={[20 , 0 , 'easeInExpo']}
               >
-                <img src={'/DesktopImages/the-star.png'} alt="" className='w-[44.812rem] h-[58.375rem] bg-transparent z-50 opacity-1 object-contain duration-[2000ms]' />
+                <img src={'/DesktopImages/the-star.png'} alt="" className='w-[44.812rem] h-[58.375rem] bg-transparent  z-[99] opacity-1 object-contain duration-[2000ms]' />
               </Parallax>
             </div>
           </div>
@@ -340,7 +340,7 @@ export const ActFirstDesktop = () => {
             translateY={[100, 0, 'easeOutExpo']}
             easing="easeInQuad"
           > */}
-          <img src={'/DesktopImages/Wormhole_03.png'} alt="" className='w-full h-[1080px] opacity-1 bg-transparent duration-[2000ms] ' />
+            <img src={'/DesktopImages/Wormhole_03.png'} alt="" className='w-full h-[1080px] opacity-1 bg-transparent duration-[2000ms]  -z-50' />
           {/* </Parallax> */}
           <div className='absolute bottom-[105px] grid w-[80%] grid-cols-3 duration-[2000ms] z-50' ref={textEnd.ref}>
             <div className='col-start-3   flex justify-start'>
